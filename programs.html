@@ -1,36 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Our Programs - Mountain Movers CBO</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Programs - Mountain Movers CBO</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
-    <header><h1>Our Programs</h1></header>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="get-involved.html">Get Involved</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <h2>Youth Empowerment</h2>
-        <ul>
-            <li>Life skills training</li>
-            <li>Sports & talent nurturing</li>
-        </ul>
-        <h2>Women Empowerment</h2>
-        <ul>
-            <li>Skills training & entrepreneurship</li>
-            <li>Health and wellness awareness</li>
-        </ul>
-        <h2>Girls' Support</h2>
-        <ul>
-            <li>Menstrual hygiene education</li>
-            <li>Sanitary towel distribution</li>
-            <li>Self-esteem & mentorship</li>
-        </ul>
-    </main>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white py-6 text-center shadow-lg">
+    <h1 class="text-3xl font-bold">Our Programs</h1>
+    <p class="text-sm">Empowering youth, girls, and women in Kawangware</p>
+  </header>
+
+  <!-- Program Grid -->
+  <section class="max-w-6xl mx-auto py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Youth Empowerment -->
+    <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition">
+      <div class="flex items-center mb-4">
+        <i data-feather="activity" class="text-green-600 w-6 h-6 mr-2"></i>
+        <h2 class="text-xl font-semibold text-green-700">Youth Empowerment</h2>
+      </div>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
+        <li>Life skills training</li>
+        <li>Sports & talent nurturing</li>
+      </ul>
+    </div>
+
+    <!-- Women Empowerment -->
+    <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition">
+      <div class="flex items-center mb-4">
+        <i data-feather="briefcase" class="text-green-600 w-6 h-6 mr-2"></i>
+        <h2 class="text-xl font-semibold text-green-700">Women Empowerment</h2>
+      </div>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
+        <li>Skills training & entrepreneurship</li>
+        <li>Health and wellness awareness</li>
+      </ul>
+    </div>
+
+    <!-- Girls' Support -->
+    <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition">
+      <div class="flex items-center mb-4">
+        <i data-feather="heart" class="text-green-600 w-6 h-6 mr-2"></i>
+        <h2 class="text-xl font-semibold text-green-700">Girls' Support</h2>
+      </div>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
+        <li>Menstrual hygiene education</li>
+        <li>Sanitary towel distribution</li>
+        <li>Self-esteem & mentorship sessions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Mountain Movers CBO. All rights reserved.</p>
+  </footer>
+
+  <script>feather.replace()</script>
 </body>
 </html>
