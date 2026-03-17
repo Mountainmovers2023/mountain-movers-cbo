@@ -1,112 +1,271 @@
+<nav style="background: #0a4d22; padding: 1.2rem 2rem; color: #fff; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+  <div style="font-weight: 800; font-size: 1.5rem; letter-spacing: 1px; text-transform: uppercase;">
+    Mountain Movers <span style="color: #8bc34a;">CBO</span>
+  </div>
+  <div class="menu-toggle" onclick="toggleMenu()" style="font-size: 1.8rem;"><i class="fas fa-bars"></i></div>
+  <div class="links" id="nav-links">
+    <a href="#about" style="font-size: 1.1rem; margin: 0 10px;">About</a>
+    <a href="#programs" style="font-size: 1.1rem; margin: 0 10px;">Programs</a>
+    <a href="#success" style="font-size: 1.1rem; margin: 0 10px;">Stories</a>
+    <a href="#donate" style="font-size: 1.1rem; margin: 0 10px; color: #8bc34a;">Donate</a>
+  </div>
+</nav>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mountain Movers CBO empowers youth, girls, and women in Kawangware, Nairobi through life skills, education, sports, and economic opportunities.">
-  <title>Mountain Movers CBO - Empowering Kawangware</title>
-  <link rel="icon" href="https://i.imgur.com/CgvwLCY.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+<header class="hero" style="height: 95vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://i.imgur.com/H7FwWLf.jpg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 2rem;">
+  
+  <div style="max-width: 900px;">
+    <span style="background: #8bc34a; color: #0a4d22; padding: 8px 20px; border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 1rem; letter-spacing: 2px; margin-bottom: 1.5rem; display: inline-block;">
+      Kawangware, Nairobi
+    </span>
 
-    nav {
-      background: #0a4d22;
-      padding: 1rem 2rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .logo { height: 50px; }
-    .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
-    .links { display: flex; gap: 1rem; }
-    .links a { color: #fff; text-decoration: none; font-weight: bold; }
-    .links a:hover { color: #8bc34a; }
+    <h1 style="font-size: clamp(3rem, 8vw, 5rem); line-height: 1; margin-bottom: 1.5rem; font-family: 'Georgia', serif; font-weight: 900; text-shadow: 3px 3px 10px rgba(0,0,0,0.5);">
+      MOUNTAIN MOVERS <span style="color: #8bc34a;">CBO</span>
+    </h1>
 
-    .hero {
-      background: url('https://i.imgur.com/nsDLVvu.jpeg') center/cover no-repeat;
-      color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    .hero h1 { font-size: 2.5rem; text-shadow: 2px 2px 5px #000; }
-    .hero p { font-size: 1rem; max-width: 600px; text-shadow: 1px 1px 3px #000; }
+    <p style="font-size: 1.4rem; line-height: 1.5; max-width: 750px; margin: 0 auto 3rem; font-weight: 400; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">
+      Uplifting youth, girls, and women through mentorship, sports, and economic empowerment.
+    </p>
 
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      color: #0a4d22;
-      margin-top: 2rem;
-    }
+    <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="#donate" style="background: #8bc34a; color: #0a4d22; padding: 1.2rem 2.5rem; font-size: 1.2rem; font-weight: 800; text-decoration: none; border-radius: 50px; transition: 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+        💚 SUPPORT OUR WORK
+      </a>
+      <a href="https://wa.me/254702904935" target="_blank" style="background: transparent; border: 2px solid white; color: white; padding: 1.2rem 2.5rem; font-size: 1.2rem; font-weight: 800; text-decoration: none; border-radius: 50px; transition: 0.3s;">
+        💬 CHAT WITH US
+      </a>
+    </div>
+  </div>
+</header>
+<section id="about" style="padding: 5rem 1.5rem; background: #ffffff; text-align: center;">
+  <div style="max-width: 1000px; margin: auto;">
+    <h2 style="font-size: 3rem; color: #0a4d22; margin-bottom: 2rem; font-family: 'Georgia', serif; font-weight: 900;">
+      About <span style="color: #8bc34a;">Us</span>
+    </h2>
+    <p style="font-size: 1.4rem; line-height: 1.8; color: #444; margin-bottom: 3rem; max-width: 850px; margin-left: auto; margin-right: auto;">
+      Mountain Movers Community-Based Organization (CBO) is a grassroots initiative dedicated to <strong>transforming lives in Kawangware</strong> by supporting and uplifting youth, girls, and women through empowerment programs, sports, and mentorship.
+    </p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem;">
+      <div style="background: #f4fbf6; padding: 2.5rem; border-radius: 20px; border-bottom: 5px solid #8bc34a;">
+        <h3 style="font-size: 1.8rem; color: #0a4d22; margin-bottom: 1rem;">Our Vision</h3>
+        <p style="font-size: 1.2rem; color: #555;">A self-reliant community where youth, women, and girls thrive in dignity and empowerment.</p>
+      </div>
+      <div style="background: #f4fbf6; padding: 2.5rem; border-radius: 20px; border-bottom: 5px solid #0a4d22;">
+        <h3 style="font-size: 1.8rem; color: #0a4d22; margin-bottom: 1rem;">Our Mission</h3>
+        <p style="font-size: 1.2rem; color: #555;">To empower the vulnerable in Kawangware through life skills, mentorship, education, and economic opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    .programs, .team, .gallery-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .card, .team-member {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 280px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .team-member img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #0a4d22;
-    }
-    .gallery-grid img {
-      width: 100%;
-      max-width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+<section id="programs" style="padding: 5rem 1.5rem; background: #0a4d22; color: white;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 3rem; color: #ffffff; text-align: center; margin-bottom: 3.5rem; font-family: 'Georgia', serif; font-weight: 900;">
+      Our <span style="color: #8bc34a;">Impact</span> Areas
+    </h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+      
+      <div style="background: rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); text-align: center; transition: 0.3s;">
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">🏆</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #8bc34a;">Youth Empowerment</h3>
+        <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">Training youth in life skills, leadership, and teamwork through sports and creative mentorship outlets.</p>
+      </div>
 
-    .contact-form {
-      max-width: 500px;
-      margin: auto;
-      padding: 1rem;
-      background: #f1f1f1;
-      border-radius: 8px;
-    }
-    .contact-form label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form button {
-      background: #0a4d22;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
+      <div style="background: rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); text-align: center;">
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">👩‍💼</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #8bc34a;">Women Empowerment</h3>
+        <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">Equipping women with vocational skills and financial literacy to foster sustainable independence.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); padding: 3rem 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); text-align: center;">
+        <div style="font-size: 3.5rem; margin-bottom: 1rem;">🎒</div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #8bc34a;">Girls’ Support</h3>
+        <p style="font-size: 1.2rem; line-height: 1.6; color: #e0e0e0;">Providing dignity packs (hygiene kits), school supplies, and confidence-building workshops.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<section id="success" style="padding: 6rem 1.5rem; background-color: #fdfdfd;">
+  <div style="max-width: 1200px; margin: auto;">
+    
+    <h2 style="font-size: 3.5rem; color: #0a4d22; text-align: center; margin-bottom: 1.5rem; font-family: 'Georgia', serif; font-weight: 900;">
+      Real <span style="color: #8bc34a;">Impact</span>, Real Stories
+    </h2>
+    <p style="text-align:center; font-size: 1.4rem; color: #666; max-width: 800px; margin: 0 auto 4rem;">
+      Your support isn't just a number on a spreadsheet; it’s the reason these leaders in Kawangware can dream of a brighter future.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center;">
+      
+      <div style="flex: 1; min-width: 350px; max-width: 500px; background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid #eee; display: flex; flex-direction: column;">
+        <div style="position: relative;">
+          <img src="https://i.imgur.com/KFoj8dL.jpeg" alt="Faith playing soccer" style="width: 100%; height: 400px; object-fit: cover;">
+          <span style="position: absolute; top: 20px; left: 20px; background: #8bc34a; color: #0a4d22; padding: 10px 25px; border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            Impact: Education & Dignity
+          </span>
+        </div>
+        <div style="padding: 3rem; flex-grow: 1;">
+          <h3 style="font-size: 2.2rem; color: #0a4d22; margin-bottom: 1.5rem; font-family: 'Georgia', serif;">Faith's Journey</h3>
+          <p style="font-size: 1.3rem; line-height: 1.8; color: #444; font-style: italic; margin-bottom: 1.5rem;">
+            "Before Mountain Movers, I lived in fear of my monthly cycle. I would miss at least one week of school every month because we couldn't afford sanitary towels. I fell behind in my grades and lost my confidence."
+          </p>
+          <p style="font-size: 1.3rem; line-height: 1.8; color: #444;">
+            "Today, everything has changed. Through the <strong>Dignity Pack program</strong>, I have the supplies I need to stay in class. I am no longer just a student; I am the captain of our girls' soccer team. I am proof that when you empower a girl, you empower a nation."
+          </p>
+        </div>
+        <div style="padding: 1.5rem; background: #f4fbf6; text-align: center; border-top: 1px solid #eee;">
+          <strong style="color: #0a4d22; font-size: 1.1rem;">RESULT: 100% School Attendance</strong>
+        </div>
+      </div>
+
+      <div style="flex: 1; min-width: 350px; max-width: 500px; background: white; border-radius: 25px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid #eee; display: flex; flex-direction: column;">
+        <div style="position: relative;">
+          <img src="https://i.imgur.com/DXJk9bA.jpeg" alt="Youth Leadership" style="width: 100%; height: 400px; object-fit: cover;">
+          <span style="position: absolute; top: 20px; left: 20px; background: #0a4d22; color: #fff; padding: 10px 25px; border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            Impact: Youth Leadership
+          </span>
+        </div>
+        <div style="padding: 3rem; flex-grow: 1;">
+          <h3 style="font-size: 2.2rem; color: #0a4d22; margin-bottom: 1.5rem; font-family: 'Georgia', serif;">Leading the Way</h3>
+          <p style="font-size: 1.3rem; line-height: 1.8; color: #444; font-style: italic; margin-bottom: 1.5rem;">
+            "Growing up in Kawangware, the streets can easily pull you in the wrong direction. I spent most of my days idle, with no vision for my future and no one to guide me toward my potential."
+          </p>
+          <p style="font-size: 1.3rem; line-height: 1.8; color: #444;">
+            "The <strong>Mountain Movers Mentorship program</strong> gave me a reason to stay disciplined. Soccer was the hook, but the leadership workshops were the foundation. I’ve gone from being a boy on the sidelines to a mentor for younger children in my neighborhood."
+          </p>
+        </div>
+        <div style="padding: 1.5rem; background: #f4fbf6; text-align: center; border-top: 1px solid #eee;">
+          <strong style="color: #0a4d22; font-size: 1.1rem;">RESULT: Community Peer Mentor</strong>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="gallery" style="padding: 0; background-color: #0a4d22;">
+  <div style="padding: 4rem 1.5rem; text-align: center; background: white;">
+    <h2 style="font-size: 3.5rem; color: #0a4d22; margin-bottom: 1rem; font-family: 'Georgia', serif; font-weight: 900;">
+      Our <span style="color: #8bc34a;">Community</span> in Action
+    </h2>
+    <p style="font-size: 1.4rem; color: #666; max-width: 800px; margin: 0 auto;">
+      A glimpse into the daily lives, matches, and empowerment sessions that define Mountain Movers CBO.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 0; line-height: 0;">
+    
+    <div style="position: relative; overflow: hidden; height: 450px;">
+      <img src="https://i.imgur.com/jwt7ft9.jpeg" alt="Women soccer team" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem; line-height: 1.4;">
+        <h4 style="font-size: 1.5rem; margin: 0;">Match Day Ready</h4>
+        <p style="font-size: 1rem; opacity: 0.9;">Our women's team posing before a community tournament.</p>
+      </div>
+    </div>
+
+    <div style="position: relative; overflow: hidden; height: 450px;">
+      <img src="https://i.imgur.com/nsDLVvu.jpeg" alt="Girls receiving dignity packs" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem; line-height: 1.4;">
+        <h4 style="font-size: 1.5rem; margin: 0;">Dignity Restored</h4>
+        <p style="font-size: 1rem; opacity: 0.9;">Distributing hygiene kits to ensure girls stay in school.</p>
+      </div>
+    </div>
+
+    <div style="position: relative; overflow: hidden; height: 450px;">
+      <img src="https://i.imgur.com/H7FwWLf.jpg" alt="Girls soccer training" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem; line-height: 1.4;">
+        <h4 style="font-size: 1.5rem; margin: 0;">Training for the Future</h4>
+        <p style="font-size: 1rem; opacity: 0.9;">Building teamwork and discipline on the pitch.</p>
+      </div>
+    </div>
+
+    <div style="position: relative; overflow: hidden; height: 450px;">
+      <img src="https://i.imgur.com/RuX7zte.jpg" alt="Chairman's Cup" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
+      <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 2rem; line-height: 1.4;">
+        <h4 style="font-size: 1.5rem; margin: 0;">The Chairman's Cup</h4>
+        <p style="font-size: 1rem; opacity: 0.9;">Competing for excellence at the regional level.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="team" style="padding: 6rem 1.5rem; background: #f4fbf6;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 3.5rem; color: #0a4d22; text-align: center; margin-bottom: 4rem; font-family: 'Georgia', serif; font-weight: 900;">
+      The <span style="color: #8bc34a;">Leaders</span> Behind the Movement
+    </h2>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center;">
+      
+      <div style="background: white; border-radius: 30px; padding: 3rem 2rem; width: 350px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-bottom: 8px solid #8bc34a;">
+        <img src="https://i.imgur.com/3GirrdK.jpeg" alt="Merceline Ayuma" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #f4fbf6; margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.8rem; color: #0a4d22; margin-bottom: 0.5rem;">Merceline Ayuma</h3>
+        <p style="color: #8bc34a; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem;">Founder & Executive Director</p>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.6;">A visionary leader dedicated to social inclusion and the empowerment of vulnerable women and youth in Nairobi.</p>
+      </div>
+
+      <div style="background: white; border-radius: 30px; padding: 3rem 2rem; width: 350px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-bottom: 8px solid #0a4d22;">
+        <img src="https://i.imgur.com/goEO4UR.jpeg" alt="Alex Vidali" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #f4fbf6; margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.8rem; color: #0a4d22; margin-bottom: 0.5rem;">Alex Vidali</h3>
+        <p style="color: #0a4d22; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem;">Program Coordinator</p>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.6;">Expert in community outreach and sustainable development, driving our youth and women training initiatives.</p>
+      </div>
+
+      <div style="background: white; border-radius: 30px; padding: 3rem 2rem; width: 350px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-bottom: 8px solid #8bc34a;">
+        <img src="https://i.imgur.com/pBGcVa2.jpeg" alt="Collins Imonje" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid #f4fbf6; margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.8rem; color: #0a4d22; margin-bottom: 0.5rem;">Collins Imonje</h3>
+        <p style="color: #8bc34a; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem;">Committee Member</p>
+        <p style="font-size: 1.1rem; color: #666; line-height: 1.6;">Strategic planner and youth mentor, ensuring our mission is executed with precision and dedication.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="donate" style="padding: 6rem 1.5rem; background-color: #0a4d22; color: white;">
+  <div style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-family: 'Georgia', serif; font-weight: 900;">
+      Move the <span style="color: #8bc34a;">Mountain</span> with Us
+    </h2>
+    <p style="font-size: 1.5rem; margin-bottom: 4rem; opacity: 0.9;">Choose a method below to send your support directly to Kawangware.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+      
+      <div style="background: white; color: #333; padding: 4rem 2rem; border-radius: 40px; position: relative; overflow: hidden;">
+        <div style="background: #8bc34a; color: #0a4d22; position: absolute; top: 0; left: 0; right: 0; padding: 1rem; font-weight: 900; text-transform: uppercase;">Most Popular</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/1200px-M-PESA_LOGO-01.svg.png" alt="M-Pesa" style="height: 50px; margin-top: 1rem; margin-bottom: 2rem;">
+        <p style="font-size: 1rem; text-transform: uppercase; color: #777; margin-bottom: 0.5rem;">Paybill Business No.</p>
+        <h4 style="font-size: 3rem; color: #0a4d22; margin-bottom: 1.5rem; font-family: monospace;">522533</h4>
+        <p style="font-size: 1rem; text-transform: uppercase; color: #777; margin-bottom: 0.5rem;">Account Number</p>
+        <h4 style="font-size: 3rem; color: #0a4d22; font-family: monospace;">8065266</h4>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.1); color: white; padding: 4rem 2rem; border-radius: 40px; border: 2px solid rgba(255,255,255,0.2);">
+        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: #8bc34a;">International / Bank</h3>
+        <div style="text-align: left; margin-bottom: 2rem;">
+          <p style="font-size: 1.2rem; margin-bottom: 1rem;">🏦 <strong>Bank:</strong> KCB Bank Kenya</p>
+          <p style="font-size: 1.2rem; margin-bottom: 1rem;">🌍 <strong>SWIFT:</strong> KCBKKE NA</p>
+          <p style="font-size: 1.2rem; margin-bottom: 1rem;">📄 <strong>Account:</strong> 8065266</p>
+        </div>
+        <p style="font-size: 1rem; opacity: 0.8; line-height: 1.6;">Use <strong>Remitly</strong>, <strong>WorldRemit</strong>, or <strong>Sendwave</strong> to pay directly to our M-Pesa Paybill from overseas.</p>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 5rem;">
+      <a href="https://wa.me/254702904935" style="background: #25d366; color: white; padding: 1.5rem 3.5rem; font-size: 1.4rem; font-weight: 800; border-radius: 100px; text-decoration: none; display: inline-block;">
+        Need a Tax Receipt? Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+<section id="faq" style="padding: 6rem 1.5rem; background-color: #ffffff;">
+  <div style="max-width: 900px; margin: auto;">
+    
+    <h2 class="section-title">Common <span>Questions</span></h2>
+    <p style="text-alig      font-weight: bold;
       cursor: pointer;
     }
 
